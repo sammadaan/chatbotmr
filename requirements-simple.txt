@@ -1,0 +1,17 @@
+(cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF'
+diff --git a/requirements-simple.txt b/requirements-simple.txt
+--- a/requirements-simple.txt
++++ b/requirements-simple.txt
+@@ -0,0 +1,10 @@
++# Essential packages for MRU Voice Chatbot
++speechrecognition
++pyttsx3
++scikit-learn
++numpy
++spacy
++requests
++
++# Optional: Install these if the main packages work
++# pyaudio  # Uncomment if you have microphone issues
+EOF
+)
