@@ -1,0 +1,43 @@
+diff --git a/requirements.txt b/requirements.txt
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -1,3 +1,36 @@
+-streamlit
+-gtts
+-requests
++# Voice-Enabled MRU Chatbot Dependencies
++# =====================================
++
++# Voice Recognition and Text-to-Speech
++speechrecognition==3.10.0
++pyttsx3==2.90
++pyaudio==0.2.11
++
++# Natural Language Processing
++spacy==3.7.2
++en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
++
++# Machine Learning for Intent Classification
++scikit-learn==1.3.2
++numpy==1.24.3
++
++# Web Framework (if needed for web interface)
++flask==2.3.3
++flask-cors==4.0.0
++
++# Database (if needed for conversation logging)
++sqlite3  # Built-in with Python
++
++# Utility Libraries
++python-dateutil==2.8.2
++regex==2023.10.3
++
++# Development and Testing
++pytest==7.4.3
++pytest-cov==4.1.0
++
++# Optional: For enhanced features
++requests==2.31.0  # For web scraping updates
++beautifulsoup4==4.12.2  # For parsing web content
++
++
